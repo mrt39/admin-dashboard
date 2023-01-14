@@ -7,3 +7,26 @@ body, html {
     padding: 0;
 }
 
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.container div {
+    border: 1px blue dotted;
+}
+
+.header{
+    grid-column: 2 / 3;
+}
+
+.sidebar{
+    grid-row: 1 / 3;
+    background-color: #1892d3;
+}
+
+.content-container{
+    background-color: #e1e8f0;
+}
