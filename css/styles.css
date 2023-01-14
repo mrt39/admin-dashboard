@@ -1,5 +1,6 @@
 body, html {
     height: 100%;
+    font-family: sans-serif;
 }
   
 * {
@@ -20,13 +21,246 @@ body, html {
 
 .header{
     grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.header-content-1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.searchbar{
+    margin-left: 50px;
+    display: flex;
+}
+
+.searchbar label{
+    margin-right: 15px;
+}
+
+.searchinput{
+    background-color: #e1e8f0;
+    border-radius: 20px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.notiffs-and-profile-icon{
+    display: flex;
+    margin-right: 5rem;
+}
+
+.notiffs-and-profile-icon p, img{
+    margin-right: 2rem;
+}
+
+.username-header-top{
+    font-size: 19px;
+}
+
+.header-content-2{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.profile-icon-and-greet{
+    display: flex;
+    margin-left: 50px;
+}
+
+.greeting{
+    font-size: 13px;
+}
+
+.username-header-bottom{
+    font-size: 23px;
+}
+
+.buttons{
+    margin-right: 5rem;
+    display: flex;
+}
+
+.buttons button{
+    margin: 0 2rem 0 2rem;
+    justify-self: center;
+    align-self: center;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    width: 7rem;
+    cursor: pointer;
+}
+
+.btn {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    color: #ffffff;
+    font-size: 19px;
+    background: #1892d3;
+    padding: 11px 27px 11px 27px;
+    text-decoration: none;
+}
+  
+.btn:hover {
+    background: #ffffff;
+    text-decoration: none;
+    color: #1892d3;
 }
 
 .sidebar{
     grid-row: 1 / 3;
     background-color: #1892d3;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.sidebar div{
+    margin-left: 25px;
+    margin-bottom: 3rem;
+}
+
+.sidebar div p{
+    margin-bottom: 1rem;
+}
+
+.sidebar-content-1{
+    margin-top: 1rem;
+    font-size: 30px;
+}
+
+.content-section{
+    background-color: #e1e8f0;
+    display: flex;
 }
 
 .content-container{
-    background-color: #e1e8f0;
+    background-color: paleturquoise;
+    flex: 0 1 95%;
+    margin: 3rem 2rem 4rem 2rem;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
 }
+
+.your-projects{
+    background-color: #eeb42f;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header-of-section{
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.project-boxes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: blue;
+    flex: 0 1 95%;
+    gap: 30px;
+}
+
+.box{
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 12px;
+}
+
+.project-text{
+    margin-right: 35px;
+    margin-left: 20px;
+}
+
+.project-text-header{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.project-text-content{
+    font-size: 16px;
+    color: #8b8b8b;
+}
+
+.box-icons{
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.share{
+    margin-right: 20px;
+}
+
+.announcements{
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.announcements-content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 90%;
+    border-radius: 12px;
+}
+
+.announcements-content{
+    margin: 0 1.5rem 0 1.5rem;
+}
+
+hr{
+    margin: 0 1.5rem 0 1.5rem;
+}
+
+.announcement-content-header{
+    font-size: 14px;
+}
+
+.announcement-content-text{
+    font-size: 12px;
+}
+
+.trending{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.trending-content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 90%;
+    border-radius: 12px;
+}
+
+.trending-profile{
+    margin: 0 1.5rem 0 1.5rem;
+    display: flex;
+}
+
+.trending-profile-text{
+    flex: 90%;
+    font-size: 14px;
+}
+
